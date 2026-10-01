@@ -1,0 +1,22 @@
+[
+  {
+    "value": "7+ yrs",
+    "label": "Building SaaS products",
+    "detail": "Ruby on Rails and React at the core"
+  },
+  {
+    "value": "6h → 23min",
+    "label": "Support reply time",
+    "detail": "Company-wide at ActiveCampaign, helped by internal tools I delivered"
+  },
+  {
+    "value": "20s → <8s",
+    "label": "Data table load time",
+    "detail": "After rebuilding SmarterSelect's tables and queries"
+  },
+  {
+    "value": "~95%",
+    "label": "Test coverage",
+    "detail": "With a modular, parallel Playwright framework I designed"
+  }
+]

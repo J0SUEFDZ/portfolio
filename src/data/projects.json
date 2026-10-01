@@ -1,20 +1,74 @@
 [
   {
-    "title": "Awesome Website",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-01.webp", "astro-02.jpeg"],
-    "tech": ["Astro", "Tailwind"],
-    "platforms": ["web"],
-    "link": "https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/",
-    "category": "Published Website"
+    "title": "Next-generation template editor",
+    "company": "Postmark (ActiveCampaign)",
+    "category": "Tech lead",
+    "icon": "mdi:pencil-ruler",
+    "highlight": "10 months",
+    "highlightLabel": "discovery to delivery",
+    "context": "Postmark's next-generation template editor, a 10-month initiative that needed cross-functional alignment from the start.",
+    "role": "Led the technical discovery, cross-functional alignment and end-to-end decision-making, and handled executive communication.",
+    "result": "Carried the initiative through its full lifecycle, from first discovery to delivery.",
+    "tech": ["Ruby on Rails", "React", "RSpec", "AWS"]
   },
   {
-    "title": "Demo Mobile App",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-02.jpeg", "#"],
-    "tech": ["Flutter", "Dart", "REST API"],
-    "platforms": ["apple-ios", "android"],
-    "link": "https://github.com/nbakh16/career-portfolio-template",
-    "category": "Hobby"
+    "title": "Billing platform migration",
+    "company": "Postmark (ActiveCampaign)",
+    "category": "Tech lead",
+    "icon": "mdi:credit-card-outline",
+    "highlight": "Stripe",
+    "highlightLabel": "billing migration",
+    "context": "Migrating the billing platform behind Postmark, a transactional email product.",
+    "role": "Technical lead and subject-matter expert: system design, ticket breakdown and cross-team alignment.",
+    "result": "Turned the migration into a designed, ticketed plan and onboarded contractors to deliver it.",
+    "tech": ["Ruby on Rails", "Stripe", "React", "RSpec"]
+  },
+  {
+    "title": "Legacy platform modernization",
+    "company": "SmarterSelect",
+    "category": "Modernization",
+    "icon": "mdi:rocket-launch-outline",
+    "highlight": "20s → <8s",
+    "highlightLabel": "data table load time",
+    "context": "A legacy Rails 4 and jQuery monolith whose data tables took over 20 seconds to load.",
+    "role": "Spearheaded the move to a Rails 6 API with a React frontend and rebuilt the data table architecture: no more N+1 queries, refined indexing and caching.",
+    "result": "Load times dropped from over 20 seconds to under 8.",
+    "tech": ["Ruby on Rails 6", "React", "PostgreSQL", "ElasticSearch", "Sidekiq"]
+  },
+  {
+    "title": "Customer Support tooling",
+    "company": "ActiveCampaign",
+    "category": "Internal tools",
+    "icon": "mdi:headset",
+    "highlight": "6h → 23min",
+    "highlightLabel": "support reply time",
+    "context": "Several initiatives to make Customer Support more efficient.",
+    "role": "Owned them end to end: planning, development, deployment, stakeholder communication, documentation and demos. Built internal tools that streamlined workflows and centralized key account data.",
+    "result": "Contributed to cutting ticket reply times from 6 hours to 23 minutes company-wide.",
+    "tech": ["PHP", "React", "TypeScript", "Python"]
+  },
+  {
+    "title": "Playwright test framework",
+    "company": "ActiveCampaign",
+    "category": "Quality",
+    "icon": "mdi:test-tube",
+    "highlight": "~95%",
+    "highlightLabel": "code coverage",
+    "context": "A new end-to-end test framework for the team's product work.",
+    "role": "Designed and implemented it in Playwright with a modular architecture and parallel execution.",
+    "result": "Approximately 95% code coverage and significantly shorter test runtimes.",
+    "tech": ["Playwright", "TypeScript", "GitLab CI"]
+  },
+  {
+    "title": "GDPR consent enforcement",
+    "company": "Blue Apron (via Gorilla Logic)",
+    "category": "Compliance",
+    "icon": "mdi:shield-check-outline",
+    "highlight": "GDPR",
+    "highlightLabel": "consent enforced across the stack",
+    "context": "Compliance and data privacy requirements on Blue Apron's e-commerce web platform.",
+    "role": "Integrated OneTrust, Segment and Google Tag Manager within the Rails backend and React frontend.",
+    "result": "User consent preferences are enforced through the stack, ensuring GDPR compliance.",
+    "tech": ["Ruby on Rails", "React", "OneTrust", "Segment", "Google Tag Manager"]
   }
 ]

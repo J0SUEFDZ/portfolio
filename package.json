@@ -1,11 +1,14 @@
 {
   "name": "portfolio",
   "type": "module",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
+    "check": "astro check",
+    "check:links": "node scripts/check-links.mjs",
+    "images": "node scripts/generate-images.mjs",
     "astro": "astro"
   },
   "dependencies": {
@@ -25,5 +28,9 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
   }
 }

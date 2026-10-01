@@ -4,14 +4,12 @@ import tailwindcss from '@tailwindcss/vite';
 import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
 
-import homeData from './src/data/home.json';
-
-
-const siteUrl = process.env.SITE_URL || homeData.siteUrl || undefined;
-
+// Served from GitHub Pages as a project site: https://j0suefdz.github.io/portfolio/
+// For a custom domain: set `site` to the domain, remove `base`, add public/CNAME.
 // https://astro.build/config
 export default defineConfig({
-  site: siteUrl,
+  site: 'https://j0suefdz.github.io',
+  base: '/portfolio',
   vite: {
     plugins: [tailwindcss()]
   },

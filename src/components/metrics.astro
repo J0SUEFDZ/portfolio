@@ -1,0 +1,64 @@
+---
+import metrics from '../data/metrics.json';
+---
+
+<section id="impact" class="section-container !pt-0 md:!pt-0" aria-label="Impact in numbers">
+  <div class="container mx-auto">
+    <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      {metrics.map((metric) => (
+        <div class="metric-card flex flex-col-reverse justify-end gap-1 p-5 md:p-6 rounded-2xl bg-accent/5 border border-accent/10 hover:border-accent/40 transition-colors duration-300">
+          <dt>
+            <span class="block text-maintext font-body text-sm font-semibold">{metric.label}</span>
+            <span class="block text-subtext font-body text-xs leading-relaxed mt-1">{metric.detail}</span>
+          </dt>
+          <dd class="font-heading font-bold text-accent text-2xl sm:text-3xl xl:text-4xl tracking-tight whitespace-nowrap">
+            {metric.value}
+          </dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+</section>
+
+<style>
+  .metric-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease;
+  }
+
+  .metric-card.reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  function revealMetrics() {
+    const cards = document.querySelectorAll('.metric-card');
+    const cardIndexMap = new Map<Element, number>();
+    cards.forEach((card, i) => cardIndexMap.set(card, i));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = cardIndexMap.get(entry.target) ?? 0;
+          setTimeout(() => {
+            entry.target.classList.add('reveal');
+          }, index * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -10px 0px'
+    });
+
+    cards.forEach(card => observer.observe(card));
+  }
+
+  revealMetrics();
+  document.addEventListener('astro:after-swap', revealMetrics);
+</script>

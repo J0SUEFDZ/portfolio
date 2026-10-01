@@ -1,33 +1,65 @@
 {
   "categories": [
     {
-      "title": "Frontend",
+      "title": "Core stack",
       "skills": [
-        { "name": "React", "level": 3, "icon": "skill-icons:react-dark" },
-        { "name": "Next.js", "level": 2, "icon": "skill-icons:nextjs-dark" },
-        { "name": "TypeScript", "level": 3, "icon": "skill-icons:typescript" },
-        { "name": "JavaScript", "level": 3, "icon": "skill-icons:javascript" },
-        { "name": "Astro", "level": 2, "icon": "skill-icons:astro" },
-        { "name": "HTML", "level": 3, "icon": "skill-icons:html" },
-        { "name": "CSS", "level": 3, "icon": "skill-icons:css" },
-        { "name": "Tailwind CSS", "level": 2, "icon": "skill-icons:tailwindcss-dark" }
+        { "name": "Ruby on Rails", "icon": "skill-icons:rails" },
+        { "name": "React", "icon": "skill-icons:react-dark" },
+        { "name": "JavaScript", "icon": "skill-icons:javascript" },
+        { "name": "TypeScript", "icon": "skill-icons:typescript" }
       ]
     },
     {
-      "title": "Backend & Tools",
+      "title": "Also in production",
       "skills": [
-        { "name": "Node.js", "level": 3, "icon": "skill-icons:nodejs-dark" },
-        { "name": "Express", "level": 2, "icon": "skill-icons:expressjs-dark" },
-        { "name": "Docker", "level": 2, "icon": "skill-icons:docker" },
-        { "name": "Git", "level": 3, "icon": "skill-icons:git" }
+        { "name": "Python", "icon": "skill-icons:python-dark" },
+        { "name": "Django", "icon": "skill-icons:django" },
+        { "name": "PHP", "icon": "skill-icons:php-dark" },
+        { "name": "EmberJS", "icon": "skill-icons:ember" }
       ]
     },
     {
-      "title": "Database",
+      "title": "AI-assisted development",
       "skills": [
-        { "name": "PostgreSQL", "level": 2, "icon": "skill-icons:postgresql-dark" },
-        { "name": "MongoDB", "level": 2, "icon": "skill-icons:mongodb" },
-        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" }
+        { "name": "Claude Code", "icon": "mdi:console" },
+        { "name": "Cursor", "icon": "mdi:cursor-default-click-outline" },
+        { "name": "Devin", "icon": "mdi:robot-outline" },
+        { "name": "Custom agents", "icon": "mdi:account-group-outline" },
+        { "name": "MCP servers", "icon": "mdi:server-network" }
+      ]
+    },
+    {
+      "title": "Data & cloud",
+      "skills": [
+        { "name": "PostgreSQL", "icon": "skill-icons:postgresql-dark" },
+        { "name": "MySQL", "icon": "skill-icons:mysql-dark" },
+        { "name": "ElasticSearch", "icon": "skill-icons:elasticsearch-dark" },
+        { "name": "AWS", "icon": "skill-icons:aws-dark" },
+        { "name": "GCP", "icon": "skill-icons:gcp-dark" },
+        { "name": "Stripe", "icon": "mdi:credit-card-outline" }
+      ]
+    },
+    {
+      "title": "Testing & delivery",
+      "skills": [
+        { "name": "Playwright", "icon": "devicon:playwright" },
+        { "name": "RSpec", "icon": "devicon:rspec" },
+        { "name": "GitLab CI", "icon": "skill-icons:gitlab-dark" },
+        { "name": "CircleCI", "icon": "devicon-plain:circleci" },
+        { "name": "Git / GitHub", "icon": "skill-icons:github-dark" },
+        { "name": "Bugsnag", "icon": "mdi:bug-outline" },
+        { "name": "New Relic", "icon": "devicon:newrelic" }
+      ]
+    },
+    {
+      "title": "Ways of working",
+      "skills": [
+        { "name": "Shape Up", "icon": "mdi:trending-up" },
+        { "name": "Scrum / Kanban", "icon": "mdi:view-grid" },
+        { "name": "Jira", "icon": "devicon:jira" },
+        { "name": "Confluence", "icon": "devicon:confluence" },
+        { "name": "Notion", "icon": "skill-icons:notion-dark" },
+        { "name": "Technical writing", "icon": "mdi:file-document-multiple-outline" }
       ]
     }
   ]

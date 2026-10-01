@@ -1,9 +1,8 @@
-import homeData from '../data/home.json';
+import type { APIRoute } from 'astro';
+import { absoluteUrl } from '../utils/url';
 
-export async function GET() {
-  const siteUrl = (homeData.siteUrl || '').replace(/\/$/, '');
-
-  const sitemapLine = siteUrl ? `\nSitemap: ${siteUrl}/sitemap-index.xml\n` : '';
+export const GET: APIRoute = async ({ site }) => {
+  const sitemapLine = site ? `\nSitemap: ${absoluteUrl('sitemap-index.xml', site)}\n` : '';
 
   const body = `User-agent: *
 Allow: /${sitemapLine}`;
@@ -13,4 +12,4 @@ Allow: /${sitemapLine}`;
       'Content-Type': 'text/plain; charset=utf-8',
     },
   });
-}
+};

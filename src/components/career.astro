@@ -4,7 +4,7 @@ import careerData from '../data/career.json';
 import CareerCard from './career-card.astro';
 
 const getItemMeta = (type: string) => {
-  if (type === 'Student') return { icon: 'mdi:school', category: 'education' };
+  if (type === 'Education') return { icon: 'mdi:school', category: 'education' };
   if (type === 'Internship') return { icon: 'mdi:briefcase-outline', category: 'work' };
   return { icon: 'mdi:briefcase', category: 'work' };
 };
@@ -20,7 +20,7 @@ const getItemMeta = (type: string) => {
           <span class="text-accent">/</span> Career
         </h2>
         <p class="text-subtext font-body text-sm max-w-md">
-          A timeline of my professional journey, roles, education, and milestones.
+          Roles and education, most recent first: transactional email, e-commerce and health tech.
         </p>
       </div>
 

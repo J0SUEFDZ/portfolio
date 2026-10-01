@@ -1,92 +1,42 @@
 {
-  "name": "John Doe",
-  "photoUrl": "favicon.svg",
-  "location": "City, Country",
-  "availability": "Available for hire",
-  "description": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
-  "descriptionHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-accent font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-accent font-bold'>efficient</span>, <span class='text-accent font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe | Lead Software Engineer",
-  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
+  "name": "Josué Fernández Díaz",
+  "initials": "JF",
+  "photoUrl": "",
+  "location": "Cartago, Costa Rica",
+  "availability": "Available now",
+  "availabilityDetail": "Senior / Tech Lead roles, remote across LATAM or hybrid in Costa Rica",
+  "description": "Senior full-stack engineer with 7+ years building SaaS products on Ruby on Rails and React. Most recently Postmark's de facto tech lead at ActiveCampaign, where I led a 10-month template editor initiative end to end and was technical lead on the billing platform migration.",
+  "descriptionHtml": "Senior full-stack engineer with <span class='text-accent font-bold'>7+ years</span> building SaaS products on <span class='text-accent font-bold'>Ruby on Rails</span> and <span class='text-accent font-bold'>React</span>. Most recently Postmark's de facto tech lead at ActiveCampaign. I take the cross-team problem nobody owns yet, ship it, and leave it documented so the team can run it without me.",
+  "webpageTitle": "Josué Fernández Díaz | Senior Full Stack Software Engineer",
+  "resumeUrl": "Josue-Fernandez-CV.pdf",
 
-  "_seo_comment": "SEO fields — update these along with your personal info for best search engine visibility.",
-  "jobTitle": "Lead Software Engineer",
-  "keywords": "John Doe, software engineer, Flutter, FastAPI, mobile development, portfolio",
-  "siteUrl": "https://your-domain.com",
+  "jobTitle": "Senior Full Stack Software Engineer",
+  "keywords": "Josué Fernández Díaz, senior software engineer, full stack engineer, tech lead, Ruby on Rails, React, TypeScript, SaaS, Costa Rica, remote LATAM",
   "lang": "en",
   "twitterHandle": "",
-  "ogImageUrl": "/placeholder.jpeg",
+  "ogImageUrl": "og-image.png",
 
-  "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
   "socials": [
     {
-      "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
-      "icon": "mdi:github",
-      "label": "View Profile",
-      "showInContact": true
-    },
-    {
-      "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
-      "icon": "mdi:linkedin",
-      "label": "Connect",
-      "showInContact": true
-    },
-    {
-      "name": "Leetcode",
-      "url": "#",
-      "icon": "devicon-plain:leetcode",
-      "label": "View Profile",
-      "showInContact": false
-    },
-    {
-      "name": "Behance",
-      "url": "#",
-      "icon": "devicon-plain:behance",
-      "label": "View Profile",
-      "showInContact": false
-    },
-    {
       "name": "Email",
-      "url": "mailto:your-mail@example.com",
+      "url": "mailto:josue.0795@gmail.com",
       "icon": "mdi:email",
       "label": "Send Email",
       "showInContact": true
     },
     {
-      "name": "WhatsApp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
-      "icon": "mdi:whatsapp",
-      "label": "Send Message",
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/josuefdz/",
+      "icon": "mdi:linkedin",
+      "label": "Connect",
       "showInContact": true
     },
     {
-      "name": "Facebook",
-      "url": "#",
-      "icon": "mdi:facebook",
+      "name": "GitHub",
+      "url": "https://github.com/J0SUEFDZ",
+      "icon": "mdi:github",
       "label": "View Profile",
-      "showInContact": false
-    },
-    {
-      "name": "Messenger",
-      "url": "#",
-      "icon": "mdi:facebook-messenger",
-      "label": "Send Message",
       "showInContact": true
-    },
-    {
-      "name": "Instagram",
-      "url": "#",
-      "icon": "mdi:instagram",
-      "label": "View Profile",
-      "showInContact": false
-    },
-    {
-      "name": "Twitter",
-      "url": "#",
-      "icon": "mdi:twitter",
-      "label": "View Profile",
-      "showInContact": false
     }
   ]
 }

@@ -1,27 +1,58 @@
 [
   {
-    "company": "Demo Company",
-    "role": "Lead Software Engineer",
-    "period": "Oct 2025 - Present",
-    "type": "Full time job",
-    "description": "Leading cross-platform application development using Flutter and Python FastAPI. Focused on scalable system design, API integrations, and team leadership.",
-    "skills": ["Team Leadership", "System Architecture", "Flutter", "FastAPI"]
+    "company": "ActiveCampaign (Postmark)",
+    "role": "Senior Software Engineer",
+    "period": "Apr 2024 - Sep 2026",
+    "type": "Full time",
+    "description": "De facto Tech Lead and primary frontend owner for Postmark through major team transitions. Led the 10-month template editor initiative end to end, was technical lead for the billing platform migration, ran hiring and onboarding for engineers and contractors, and authored 30+ documentation pages.",
+    "skills": ["Ruby on Rails", "React", "Stripe", "RSpec", "AWS", "Bugsnag"]
   },
   {
-    "company": "Demo Solutions Ltd",
-    "url": "https://example.com",
-    "role": "Full-stack Developer",
-    "period": "Sep 2023 - Sep 2025",
-    "type": "Full time job",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["React", "Node.js", "PostgreSQL", "Docker"]
+    "company": "ActiveCampaign",
+    "role": "Software Engineer",
+    "period": "Aug 2023 - Apr 2024",
+    "type": "Full time",
+    "description": "Owned end-to-end initiatives to improve Customer Support efficiency. Delivered internal tools that contributed to cutting ticket reply times from 6 hours to 23 minutes company-wide, and designed a modular, parallel Playwright framework reaching about 95% coverage.",
+    "skills": ["PHP", "React", "TypeScript", "Python", "Playwright", "GitLab"]
   },
   {
-    "company": "Demo University of Tech",
-    "role": "BSc in Computer Science",
-    "period": "Jun 2020 - Jun 2024",
-    "type": "Student",
-    "description": "Graduated with honors. Focused on data structures, algorithm optimization, software architecture, and database systems.",
-    "skills": ["Data Structures", "Algorithms", "OOP", "DBMS"]
+    "company": "Gorilla Logic (Blue Apron)",
+    "role": "Fullstack Software Developer",
+    "period": "Oct 2022 - Mar 2023",
+    "type": "Full time",
+    "description": "Built and maintained features for Blue Apron's web platform with a focus on compliance and data privacy. Integrated OneTrust, Segment and Google Tag Manager to enforce user consent preferences and ensure GDPR compliance.",
+    "skills": ["Ruby on Rails", "React", "OneTrust", "Segment", "PostgreSQL", "AWS"]
+  },
+  {
+    "company": "Pixel506 (CreativeDrive)",
+    "role": "Full Stack Software Engineer",
+    "period": "Jan 2022 - Sep 2022",
+    "type": "Full time",
+    "description": "Feature development and maintenance on a large-scale web platform built with Ruby on Rails and EmberJS. Reengineered a drag-and-drop onboarding component to improve usability within legacy EmberJS constraints.",
+    "skills": ["Ruby on Rails 4", "EmberJS", "JavaScript", "PostgreSQL"]
+  },
+  {
+    "company": "SmarterSelect",
+    "role": "Full Stack Engineer",
+    "period": "Oct 2019 - Dec 2021",
+    "type": "Full time",
+    "description": "Spearheaded the modernization from a Rails 4 and jQuery monolith to a Rails 6 API with a React frontend. Cut data table load times from over 20 seconds to under 8, and overhauled the translation system so new global customers could be onboarded within a week.",
+    "skills": ["Ruby on Rails 6", "React", "PostgreSQL", "ElasticSearch", "Sidekiq"]
+  },
+  {
+    "company": "4Geeks (Daddyo)",
+    "role": "Backend Engineer",
+    "period": "Jan 2019 - Sep 2019",
+    "type": "Full time",
+    "description": "Designed the backend for a health tech video analysis platform: a Python and OpenCV solution for detection, counting and motility tracking, a Django REST API, and AWS Lambda pipelines for automated analysis, with CI/CD on AWS CodePipeline.",
+    "skills": ["Python", "Django REST Framework", "OpenCV", "AWS Lambda", "PostgreSQL"]
+  },
+  {
+    "company": "Instituto Tecnológico de Costa Rica",
+    "role": "Bachelor's in Computing Engineering",
+    "period": "2015 - 2019",
+    "type": "Education",
+    "description": "Mentored a group of 5 first-year students from remote regions through IntegraTEC, and presented projects at the TEC Vocational Fair and the TEC Emprende Lab.",
+    "skills": ["Computing Engineering", "Mentoring", "Java"]
   }
 ]

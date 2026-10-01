@@ -11,11 +11,11 @@ import localData from '../data/home.json';
           <span class="text-accent">/</span> Contact Me
         </h2>
         <p class="text-subtext font-body text-sm max-w-md">
-          Feel free to reach out. I'm always open to discussing new projects and opportunities.
+          Available now for Senior and Tech Lead roles. Tell me about the team and the problem.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
         {localData.socials
         .filter((social) => social.showInContact && social.url && social.url !== "#" && social.url !== "")
         .map((social) => {
@@ -33,7 +33,7 @@ import localData from '../data/home.json';
               />
               <h3 class="text-maintext font-bold mb-1">{social.name}</h3>
               <p class="text-subtext text-xs truncate px-2 mb-3">
-                {social.url.replace('https://', '').replace('mailto:', '').replace('wa.me/', '+')}
+                {social.url.replace('https://www.', '').replace('https://', '').replace('mailto:', '').replace(/\/$/, '')}
               </p>
               <span class="inline-flex items-center gap-1 text-[10px] uppercase tracking-widest text-accent/70 font-mono border border-accent/20 rounded-full px-2.5 py-0.5 group-hover:border-accent/40 group-hover:text-accent transition-colors duration-300">
                 {social.label || 'Connect'}
@@ -44,7 +44,7 @@ import localData from '../data/home.json';
       </div>
 
       <p class="contact-preferred opacity-0 text-center text-subtext text-xs font-body pt-2">
-        Preferred: <span class="text-accent/80">Email</span> or <span class="text-accent/80">LinkedIn</span> — I typically respond within 24 hours.
+        <span class="text-accent/80">Email</span> or <span class="text-accent/80">LinkedIn</span> is the fastest way to reach me.
       </p>
     </div>
   </div>

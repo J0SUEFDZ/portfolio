@@ -112,6 +112,25 @@
   }
 
 
+  /* Quetzal - Dark */
+  [data-theme="quetzal-dark"] {
+    --color-background: #0A1517;
+    --color-accent: #5EEAD4;
+    --color-maintext: #F2FBF9;
+    --color-subtext: #A9BDBB;
+    --color-textrain: #3F6661;
+  }
+
+  /* Quetzal - Light */
+  [data-theme="quetzal-light"] {
+    --color-background: #F3FAF8;
+    --color-accent: #0F766E;
+    --color-maintext: #0B2B2A;
+    --color-subtext: #4A5F5D;
+    --color-textrain: #9CCFC6;
+  }
+
+
   /* Core Element Styles */
   *::selection {
     @apply bg-accent text-background;
