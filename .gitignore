@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Agent and assistant files stay local
+.claude/
+AGENTS.md
+CLAUDE.md
