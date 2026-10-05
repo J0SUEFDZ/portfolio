@@ -5,14 +5,14 @@
     "detail": "Ruby on Rails, React and AWS at the core"
   },
   {
-    "value": "0",
-    "label": "Billing errors",
-    "detail": "Customer-facing, across multiple live changes to Postmark's production billing data"
-  },
-  {
     "value": "6h → 23min",
     "label": "Support reply time",
     "detail": "Average first reply at ActiveCampaign, helped by internal tools I built"
+  },
+  {
+    "value": "20s → <8s",
+    "label": "Data table load time",
+    "detail": "After rebuilding SmarterSelect's tables and queries"
   },
   {
     "value": "95–97%",

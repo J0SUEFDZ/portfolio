@@ -20,7 +20,9 @@ const profileImage = await resolveAssetImage(photoUrl);
           alt={name}
           width={400}
           height={400}
-          class="w-full h-full object-cover scale-110"
+          fit="cover"
+          position="top"
+          class="w-full h-full object-cover scale-125"
           loading="eager"
         />
       ) : (
