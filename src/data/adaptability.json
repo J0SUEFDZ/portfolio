@@ -40,7 +40,7 @@
       "period": "2024 - 2026",
       "company": "ActiveCampaign (Postmark)",
       "stack": ["Ruby on Rails", "React", "Stripe", "AWS"],
-      "delivered": "Tech Lead and billing owner, with zero customer-facing billing errors."
+      "delivered": "Tech Lead and billing owner for Postmark and DMARC Digests."
     }
   ]
 }
