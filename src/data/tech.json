@@ -15,7 +15,19 @@
         { "name": "Python", "icon": "skill-icons:python-dark" },
         { "name": "Django", "icon": "skill-icons:django" },
         { "name": "PHP", "icon": "skill-icons:php-dark" },
-        { "name": "EmberJS", "icon": "skill-icons:ember" }
+        { "name": "EmberJS", "icon": "skill-icons:ember" },
+        { "name": "TailwindCSS", "icon": "skill-icons:tailwindcss-dark" },
+        { "name": "Bootstrap", "icon": "skill-icons:bootstrap" }
+      ]
+    },
+    {
+      "title": "Payments & integrations",
+      "skills": [
+        { "name": "Stripe", "icon": "mdi:credit-card-outline" },
+        { "name": "Segment", "icon": "mdi:chart-box-outline" },
+        { "name": "OneTrust", "icon": "mdi:shield-check-outline" },
+        { "name": "Google Tag Manager", "icon": "mdi:tag-multiple-outline" },
+        { "name": "Stripo", "icon": "mdi:email-edit-outline" }
       ]
     },
     {
@@ -24,29 +36,33 @@
         { "name": "Claude Code", "icon": "mdi:console" },
         { "name": "Cursor", "icon": "mdi:cursor-default-click-outline" },
         { "name": "Devin", "icon": "mdi:robot-outline" },
-        { "name": "Custom agents", "icon": "mdi:account-group-outline" },
-        { "name": "MCP servers", "icon": "mdi:server-network" }
+        { "name": "Agentic AI", "icon": "mdi:account-group-outline" },
+        { "name": "MCP servers", "icon": "mdi:server-network" },
+        { "name": "RAG", "icon": "mdi:database-search-outline" }
       ]
     },
     {
-      "title": "Data & cloud",
+      "title": "Backend & data",
       "skills": [
+        { "name": "REST APIs", "icon": "mdi:api" },
         { "name": "PostgreSQL", "icon": "skill-icons:postgresql-dark" },
         { "name": "MySQL", "icon": "skill-icons:mysql-dark" },
         { "name": "ElasticSearch", "icon": "skill-icons:elasticsearch-dark" },
-        { "name": "AWS", "icon": "skill-icons:aws-dark" },
-        { "name": "GCP", "icon": "skill-icons:gcp-dark" },
-        { "name": "Stripe", "icon": "mdi:credit-card-outline" }
+        { "name": "Sidekiq", "icon": "mdi:tray-full" },
+        { "name": "RabbitMQ", "icon": "skill-icons:rabbitmq-dark" }
       ]
     },
     {
-      "title": "Testing & delivery",
+      "title": "Cloud, testing & delivery",
       "skills": [
+        { "name": "AWS", "icon": "skill-icons:aws-dark" },
+        { "name": "GCP", "icon": "skill-icons:gcp-dark" },
         { "name": "Playwright", "icon": "devicon:playwright" },
         { "name": "RSpec", "icon": "devicon:rspec" },
         { "name": "GitLab CI", "icon": "skill-icons:gitlab-dark" },
         { "name": "CircleCI", "icon": "devicon-plain:circleci" },
         { "name": "Git / GitHub", "icon": "skill-icons:github-dark" },
+        { "name": "Bash", "icon": "skill-icons:bash-dark" },
         { "name": "Bugsnag", "icon": "mdi:bug-outline" },
         { "name": "New Relic", "icon": "devicon:newrelic" }
       ]
@@ -54,12 +70,17 @@
     {
       "title": "Ways of working",
       "skills": [
+        { "name": "Technical leadership", "icon": "mdi:account-tie-outline" },
+        { "name": "Hiring & onboarding", "icon": "mdi:account-plus-outline" },
+        { "name": "Technical writing", "icon": "mdi:file-document-multiple-outline" },
         { "name": "Shape Up", "icon": "mdi:trending-up" },
         { "name": "Scrum / Kanban", "icon": "mdi:view-grid" },
         { "name": "Jira", "icon": "devicon:jira" },
         { "name": "Confluence", "icon": "devicon:confluence" },
         { "name": "Notion", "icon": "skill-icons:notion-dark" },
-        { "name": "Technical writing", "icon": "mdi:file-document-multiple-outline" }
+        { "name": "Basecamp", "icon": "mdi:tent" },
+        { "name": "Trello", "icon": "devicon:trello" },
+        { "name": "Figma", "icon": "skill-icons:figma-dark" }
       ]
     }
   ]

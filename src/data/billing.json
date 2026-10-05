@@ -1,0 +1,36 @@
+{
+  "intro": "The domain I owned deepest at Postmark. Billing work touches real money and production data, so the standard is simple: customers never notice it.",
+  "company": "Postmark (ActiveCampaign)",
+  "period": "Apr 2024 - Sep 2026",
+  "ledger": [
+    { "item": "Platform migration", "status": "Tech lead" },
+    { "item": "Senior contractors led", "status": "6" },
+    { "item": "Pricing-tier integration", "status": "Built + maintained" },
+    { "item": "Incidents and defects", "status": "Sole owner" },
+    { "item": "Live production data changes", "status": "Multiple" }
+  ],
+  "total": { "item": "Customer-facing billing errors", "status": "0" },
+  "areas": [
+    {
+      "icon": "mdi:swap-horizontal-bold",
+      "title": "Billing platform migration",
+      "text": "Technical lead for 6 senior contractors and subject-matter expert on the migration: system design, ticket breakdown, cross-team alignment and contractor onboarding."
+    },
+    {
+      "icon": "mdi:layers-triple-outline",
+      "title": "Pricing-tier integration",
+      "text": "Built and maintained the integration behind Postmark's new pricing tiers."
+    },
+    {
+      "icon": "mdi:alert-decagram-outline",
+      "title": "Incidents and defects",
+      "text": "Sole owner and resolver of billing incidents and defects, from first report to fix."
+    },
+    {
+      "icon": "mdi:database-edit-outline",
+      "title": "Live production changes",
+      "text": "Executed multiple live changes to production billing data with zero incidents or customer-facing billing errors."
+    }
+  ],
+  "tags": ["Stripe", "Ruby on Rails", "RSpec", "Payments", "Billing", "SaaS"]
+}

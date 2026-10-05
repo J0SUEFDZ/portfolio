@@ -2,21 +2,21 @@
   {
     "value": "7+ yrs",
     "label": "Building SaaS products",
-    "detail": "Ruby on Rails and React at the core"
+    "detail": "Ruby on Rails, React and AWS at the core"
+  },
+  {
+    "value": "0",
+    "label": "Billing errors",
+    "detail": "Customer-facing, across multiple live changes to Postmark's production billing data"
   },
   {
     "value": "6h → 23min",
     "label": "Support reply time",
-    "detail": "Company-wide at ActiveCampaign, helped by internal tools I delivered"
+    "detail": "Average first reply at ActiveCampaign, helped by internal tools I built"
   },
   {
-    "value": "20s → <8s",
-    "label": "Data table load time",
-    "detail": "After rebuilding SmarterSelect's tables and queries"
-  },
-  {
-    "value": "~95%",
-    "label": "Test coverage",
-    "detail": "With a modular, parallel Playwright framework I designed"
+    "value": "95–97%",
+    "label": "Unit test coverage",
+    "detail": "Across three React modules, with Jest and React Testing Library"
   }
 ]

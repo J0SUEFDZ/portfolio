@@ -1,0 +1,70 @@
+---
+import { Icon } from 'astro-icon/components';
+import billing from '../data/billing.json';
+import AreaTile from './area-tile.astro';
+---
+
+<section id="billing" class="section-container overflow-hidden">
+  <div class="container mx-auto">
+    <div class="scroll-reveal mb-12">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
+        <span class="text-accent">/</span> Payments & Billing
+      </h2>
+      <p class="text-subtext font-body text-sm max-w-xl">{billing.intro}</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 items-start">
+      <!-- Ownership statement, styled as a receipt -->
+      <div class="scroll-reveal receipt lg:col-span-2 rounded-2xl border border-accent/20 bg-background/70 p-6 md:p-7 font-mono">
+        <div class="flex items-center justify-between gap-3">
+          <span class="inline-flex items-center gap-2 text-accent text-xs uppercase tracking-[0.2em] font-bold">
+            <Icon name="mdi:receipt-text-outline" class="w-4 h-4" />
+            Billing ownership
+          </span>
+          <span class="text-[10px] uppercase tracking-widest text-subtext">Statement</span>
+        </div>
+        <p class="text-[11px] text-subtext mt-2">{billing.company} · {billing.period}</p>
+
+        <dl class="receipt-lines mt-5 border-t border-dashed border-accent/30">
+          {billing.ledger.map((line) => (
+            <div class="flex items-baseline justify-between gap-4 py-2.5 border-b border-dashed border-accent/15">
+              <dt class="text-xs text-subtext">{line.item}</dt>
+              <dd class="text-xs text-maintext font-bold text-right whitespace-nowrap">{line.status}</dd>
+            </div>
+          ))}
+        </dl>
+
+        <div class="flex items-end justify-between gap-4 pt-5">
+          <span class="text-xs uppercase tracking-widest text-accent/90 max-w-[60%] leading-snug">{billing.total.item}</span>
+          <span class="font-heading font-bold text-accent text-6xl leading-none tracking-tight">{billing.total.status}</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3 flex flex-col gap-4">
+        {billing.areas.map((area) => (
+          <AreaTile area={area} />
+        ))}
+        <div class="scroll-reveal flex flex-wrap gap-2 pt-2">
+          {billing.tags.map((tag) => (
+            <span class="rounded-md text-[10px] px-2 md:px-3 py-1 bg-accent/5 border border-accent/10 text-accent/80">{tag}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .receipt {
+    box-shadow: 0 0 40px color-mix(in srgb, var(--color-accent) 8%, transparent);
+  }
+</style>
+
+<script>
+  import { initScrollReveal } from '../utils/reveal';
+
+  const revealBilling = () => initScrollReveal('#billing', 1);
+
+  revealBilling();
+  document.addEventListener('astro:after-swap', revealBilling);
+</script>

@@ -5,23 +5,47 @@
     "category": "Tech lead",
     "icon": "mdi:pencil-ruler",
     "highlight": "10 months",
-    "highlightLabel": "discovery to delivery",
+    "highlightLabel": "concept to delivery",
     "context": "Postmark's next-generation template editor, a 10-month initiative that needed cross-functional alignment from the start.",
-    "role": "Led the technical discovery, cross-functional alignment and end-to-end decision-making, and handled executive communication.",
-    "result": "Carried the initiative through its full lifecycle, from first discovery to delivery.",
-    "tech": ["Ruby on Rails", "React", "RSpec", "AWS"]
+    "role": "Spearheaded the initiative: technical discovery, cross-functional alignment and executive communication.",
+    "result": "Carried the initiative through its full lifecycle, from concept to delivery.",
+    "tech": ["Ruby on Rails", "React", "RSpec", "AWS", "Figma"]
   },
   {
-    "title": "Billing platform migration",
+    "title": "Multi-agent framework for AI coding agents",
     "company": "Postmark (ActiveCampaign)",
-    "category": "Tech lead",
-    "icon": "mdi:credit-card-outline",
-    "highlight": "Stripe",
-    "highlightLabel": "billing migration",
-    "context": "Migrating the billing platform behind Postmark, a transactional email product.",
-    "role": "Technical lead and subject-matter expert: system design, ticket breakdown and cross-team alignment.",
-    "result": "Turned the migration into a designed, ticketed plan and onboarded contractors to deliver it.",
-    "tech": ["Ruby on Rails", "Stripe", "React", "RSpec"]
+    "category": "AI",
+    "icon": "mdi:robot-outline",
+    "highlight": "~10x",
+    "highlightLabel": "personal delivery throughput",
+    "context": "AI coding agents needed guardrails, cost control and grounding in current vendor documentation to be useful on production work.",
+    "role": "Designed and built a multi-agent framework with human-in-the-loop write gates and risk-based model routing, plus an agentic RAG documentation-search MCP server.",
+    "result": "Agents stayed grounded in current vendor docs, and personal delivery throughput increased roughly 10x.",
+    "tech": ["Claude Code", "MCP", "Agentic AI", "RAG"]
+  },
+  {
+    "title": "Customer Support tooling",
+    "company": "ActiveCampaign",
+    "category": "Internal tools",
+    "icon": "mdi:headset",
+    "highlight": "6h → 23min",
+    "highlightLabel": "average first reply time",
+    "context": "The L2 Customer Support team depended on engineering escalations and a legacy PHP support console.",
+    "role": "Built internal tooling so L2 could resolve issues without escalating, and rebuilt the console as a React and TypeScript micro frontend with full feature parity.",
+    "result": "Contributed to cutting average first reply time from 6 hours to 23 minutes and escalated-ticket resolution from over 17 days to under 7. The new console halved initial load time and made in-app actions 2 times faster.",
+    "tech": ["PHP", "React", "TypeScript", "Python"]
+  },
+  {
+    "title": "Support console testing strategy",
+    "company": "ActiveCampaign",
+    "category": "Quality",
+    "icon": "mdi:test-tube",
+    "highlight": "95–97%",
+    "highlightLabel": "unit test coverage",
+    "context": "A new React frontend for the support console with no testing baseline.",
+    "role": "Established the unit testing baseline with Jest and React Testing Library, and architected the Playwright end-to-end strategy: modular environment configuration, reusable fixtures and page objects, and parallel execution.",
+    "result": "Coverage of 95–97% across the three modules, and team adoption driven through documentation and a knowledge-share session.",
+    "tech": ["Jest", "React Testing Library", "Playwright", "TypeScript", "GitLab"]
   },
   {
     "title": "Legacy platform modernization",
@@ -36,38 +60,14 @@
     "tech": ["Ruby on Rails 6", "React", "PostgreSQL", "ElasticSearch", "Sidekiq"]
   },
   {
-    "title": "Customer Support tooling",
-    "company": "ActiveCampaign",
-    "category": "Internal tools",
-    "icon": "mdi:headset",
-    "highlight": "6h → 23min",
-    "highlightLabel": "support reply time",
-    "context": "Several initiatives to make Customer Support more efficient.",
-    "role": "Owned them end to end: planning, development, deployment, stakeholder communication, documentation and demos. Built internal tools that streamlined workflows and centralized key account data.",
-    "result": "Contributed to cutting ticket reply times from 6 hours to 23 minutes company-wide.",
-    "tech": ["PHP", "React", "TypeScript", "Python"]
-  },
-  {
-    "title": "Playwright test framework",
-    "company": "ActiveCampaign",
-    "category": "Quality",
-    "icon": "mdi:test-tube",
-    "highlight": "~95%",
-    "highlightLabel": "code coverage",
-    "context": "A new end-to-end test framework for the team's product work.",
-    "role": "Designed and implemented it in Playwright with a modular architecture and parallel execution.",
-    "result": "Approximately 95% code coverage and significantly shorter test runtimes.",
-    "tech": ["Playwright", "TypeScript", "GitLab CI"]
-  },
-  {
     "title": "GDPR consent enforcement",
     "company": "Blue Apron (via Gorilla Logic)",
     "category": "Compliance",
     "icon": "mdi:shield-check-outline",
     "highlight": "GDPR",
     "highlightLabel": "consent enforced across the stack",
-    "context": "Compliance and data privacy requirements on Blue Apron's e-commerce web platform.",
-    "role": "Integrated OneTrust, Segment and Google Tag Manager within the Rails backend and React frontend.",
+    "context": "Compliance and data privacy requirements on Blue Apron's e-commerce web platform, alongside its migration from Braze to Segment for customer data collection.",
+    "role": "Designed the consent preferences in OneTrust and Google Tag Manager, and worked on the Segment migration within the Rails backend and React frontend.",
     "result": "User consent preferences are enforced through the stack, ensuring GDPR compliance.",
     "tech": ["Ruby on Rails", "React", "OneTrust", "Segment", "Google Tag Manager"]
   }

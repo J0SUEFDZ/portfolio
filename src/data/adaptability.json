@@ -1,0 +1,46 @@
+{
+  "statement": "I have changed languages and frameworks several times in my career. Each time I ramped up fast and was delivering value before the expected onboarding window, on every project. I'm open to learning new languages, and I expect to excel at them.",
+  "stats": [
+    { "value": "5", "label": "languages in production" },
+    { "value": "6", "label": "teams and codebases" },
+    { "value": "Every time", "label": "delivering ahead of the ramp-up window" }
+  ],
+  "steps": [
+    {
+      "period": "2019",
+      "company": "4Geeks (Daddyo)",
+      "stack": ["Python", "Django REST", "OpenCV", "AWS Lambda"],
+      "delivered": "Computer-vision backend, led from planning to client delivery."
+    },
+    {
+      "period": "2019 - 2021",
+      "company": "SmarterSelect",
+      "stack": ["Ruby on Rails 6", "React", "ElasticSearch"],
+      "delivered": "Monolith modernization and data tables from 20s to under 8s."
+    },
+    {
+      "period": "2022",
+      "company": "Pixel506 (CreativeDrive)",
+      "stack": ["Ruby on Rails 4", "EmberJS v1"],
+      "delivered": "Reengineered a drag-and-drop onboarding component within legacy constraints."
+    },
+    {
+      "period": "2022 - 2023",
+      "company": "Gorilla Logic (Blue Apron)",
+      "stack": ["Ruby on Rails", "React", "Segment", "OneTrust"],
+      "delivered": "GDPR consent enforcement and the Braze to Segment migration."
+    },
+    {
+      "period": "2023 - 2024",
+      "company": "ActiveCampaign",
+      "stack": ["PHP", "React", "TypeScript", "Python", "Playwright"],
+      "delivered": "Support console rebuild and tooling: first reply time from 6h to 23min."
+    },
+    {
+      "period": "2024 - 2026",
+      "company": "ActiveCampaign (Postmark)",
+      "stack": ["Ruby on Rails", "React", "Stripe", "AWS"],
+      "delivered": "Tech Lead and billing owner, with zero customer-facing billing errors."
+    }
+  ]
+}

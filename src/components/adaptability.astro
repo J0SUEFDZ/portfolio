@@ -1,0 +1,55 @@
+---
+import adaptability from '../data/adaptability.json';
+import StatStrip from './stat-strip.astro';
+
+const { statement, stats, steps } = adaptability;
+---
+
+<section id="adaptability" class="section-container overflow-hidden">
+  <div class="container mx-auto">
+    <div class="scroll-reveal mb-10">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
+        <span class="text-accent">/</span> New Stack, Same Result
+      </h2>
+      <p class="text-subtext font-body text-sm max-w-md">
+        Six teams, and a different stack at almost every one.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center mb-10">
+      <p class="scroll-reveal text-maintext font-body text-lg md:text-xl leading-relaxed border-l-2 border-accent pl-5">
+        {statement}
+      </p>
+      <StatStrip stats={stats} columns={3} />
+    </div>
+
+    <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+      {steps.map((step, index) => (
+        <li class="scroll-reveal relative p-5 rounded-2xl bg-accent/5 border border-accent/10 hover:border-accent/40">
+          <div class="flex items-center justify-between gap-3">
+            <span class="font-mono text-xs tracking-widest uppercase text-accent/75">{step.period}</span>
+            <span class="font-heading font-bold text-accent/25 text-2xl leading-none" aria-hidden="true">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+          </div>
+          <h3 class="font-heading font-bold text-maintext text-base mt-1">{step.company}</h3>
+          <div class="flex flex-wrap gap-2 mt-3">
+            {step.stack.map((tech) => (
+              <span class="rounded-md text-[10px] px-2 py-1 bg-accent/10 border border-accent/20 text-accent">{tech}</span>
+            ))}
+          </div>
+          <p class="text-subtext font-body text-sm leading-relaxed mt-3">{step.delivered}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<script>
+  import { initScrollReveal } from '../utils/reveal';
+
+  const revealAdaptability = () => initScrollReveal('#adaptability', 3);
+
+  revealAdaptability();
+  document.addEventListener('astro:after-swap', revealAdaptability);
+</script>

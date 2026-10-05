@@ -1,0 +1,86 @@
+[
+  {
+    "company": "ActiveCampaign (Postmark)",
+    "role": "Senior Software Engineer - Tech Lead",
+    "period": "Apr 2024 - Sep 2026",
+    "summary": "Tech Lead and primary owner for Postmark and DMARC Digests through major team transitions and restructuring, keeping the product stable and delivery moving across the web application, alerting, the billing system and the end-to-end QA suite.",
+    "stats": [
+      { "value": "6", "label": "senior contractors led" },
+      { "value": "10 months", "label": "template editor initiative" },
+      { "value": "30+", "label": "documentation pages" },
+      { "value": "~10x", "label": "personal throughput with AI agents" }
+    ],
+    "areas": [
+      {
+        "icon": "mdi:shield-star-outline",
+        "title": "Product ownership",
+        "text": "Primary owner for two products while the team around them changed, safeguarding stability and delivery continuity."
+      },
+      {
+        "icon": "mdi:account-group-outline",
+        "title": "Technical leadership",
+        "text": "Led 6 senior contractors: system design, ticket breakdown, cross-team alignment and onboarding."
+      },
+      {
+        "icon": "mdi:alarm-light-outline",
+        "title": "Incident response",
+        "text": "Primary incident responder. Advised management on rapid mitigation versus root-cause remediation, restoring service fast without accruing technical debt."
+      },
+      {
+        "icon": "mdi:account-plus-outline",
+        "title": "Hiring, onboarding and docs",
+        "text": "Ran end-to-end hiring and onboarding, with documentation that made new engineers productive within their first week. Turned undocumented release, on-call and domain knowledge into shared practice."
+      },
+      {
+        "icon": "mdi:credit-card-outline",
+        "title": "Billing and payments",
+        "text": "Owned billing infrastructure end to end, with zero customer-facing billing errors.",
+        "href": "#billing",
+        "linkLabel": "See the billing work"
+      },
+      {
+        "icon": "mdi:pencil-ruler",
+        "title": "Template editor and AI agents",
+        "text": "Spearheaded the next-generation template editor and built a multi-agent framework for AI coding agents.",
+        "href": "#projects",
+        "linkLabel": "See the case studies"
+      }
+    ],
+    "stack": ["Ruby on Rails", "React", "Stripe", "RSpec", "AWS", "Bugsnag", "New Relic", "Figma", "GitHub"]
+  },
+  {
+    "company": "ActiveCampaign",
+    "role": "Software Engineer",
+    "period": "Aug 2023 - Apr 2024",
+    "summary": "Built the tools and the testing foundation behind ActiveCampaign's L2 Customer Support console, so support could resolve issues without waiting on engineering.",
+    "stats": [
+      { "value": "6h → 23min", "label": "average first reply time" },
+      { "value": "17d → <7d", "label": "escalated-ticket resolution" },
+      { "value": "2x", "label": "faster load and in-app actions" },
+      { "value": "95–97%", "label": "unit test coverage" }
+    ],
+    "areas": [
+      {
+        "icon": "mdi:headset",
+        "title": "Support tooling",
+        "text": "Internal tooling that let the L2 Customer Support team resolve issues without engineering escalation."
+      },
+      {
+        "icon": "mdi:view-dashboard-outline",
+        "title": "Console rebuild",
+        "text": "Rebuilt a legacy PHP support console as a React and TypeScript micro frontend with full feature parity, halving initial load time."
+      },
+      {
+        "icon": "mdi:test-tube",
+        "title": "Unit testing baseline",
+        "text": "Raised coverage across the new frontend's three modules with Jest and React Testing Library, for confident, regression-free releases."
+      },
+      {
+        "icon": "mdi:sitemap-outline",
+        "title": "End-to-end strategy",
+        "text": "Architected the Playwright strategy: modular environment configuration, reusable fixtures and page objects, parallel execution. Drove adoption with docs and a knowledge-share session."
+      }
+    ],
+    "stack": ["PHP", "React", "TypeScript", "Python", "Bash", "Playwright", "GitLab"]
+  }
+]

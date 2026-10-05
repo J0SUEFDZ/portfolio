@@ -30,7 +30,7 @@ const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" vi
   <text x="112" y="103" ${font} font-size="22" fill="#34D399">${esc(home.availability)} · ${esc(home.location)}</text>
   <text x="80" y="215" ${font} font-weight="700" font-size="72" fill="#F2FBF9">${esc(home.name)}</text>
   <text x="80" y="275" ${font} font-size="30" fill="#5EEAD4" letter-spacing="3">${esc(home.jobTitle.toUpperCase())}</text>
-  <text x="80" y="335" ${font} font-size="26" fill="#A9BDBB">Ruby on Rails + React · De facto tech lead at Postmark</text>
+  <text x="80" y="335" ${font} font-size="26" fill="#A9BDBB">Ruby on Rails + React + AWS · Tech Lead and billing owner at Postmark</text>
   ${tiles}
 </svg>`;
 

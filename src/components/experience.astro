@@ -1,0 +1,75 @@
+---
+import experienceData from '../data/experience.json';
+import StatStrip from './stat-strip.astro';
+import AreaTile from './area-tile.astro';
+
+interface Role {
+  company: string;
+  role: string;
+  period: string;
+  summary: string;
+  stats: { value: string; label: string }[];
+  areas: { icon: string; title: string; text: string; href?: string; linkLabel?: string }[];
+  stack: string[];
+}
+
+const roles = experienceData as Role[];
+---
+
+<section id="experience" class="section-container overflow-hidden">
+  <div class="container mx-auto">
+    <div class="scroll-reveal mb-12">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
+        <span class="text-accent">/</span> Recent Roles
+      </h2>
+      <p class="text-subtext font-body text-sm max-w-md">
+        My last two roles at ActiveCampaign, broken down by what I owned.
+      </p>
+    </div>
+
+    <div class="space-y-8">
+      {roles.map((role, index) => (
+        <article class="rounded-2xl border border-accent/10 bg-accent/5 overflow-hidden">
+          <header class="scroll-reveal px-5 md:px-8 pt-6 md:pt-8">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-mono text-xs tracking-widest uppercase text-accent/75">{role.period}</span>
+              {index === 0 && (
+                <span class="inline-block text-[10px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-full border text-accent bg-accent/10 border-accent/20">
+                  Most recent
+                </span>
+              )}
+            </div>
+            <h3 class="text-2xl md:text-3xl font-heading font-bold text-maintext">{role.role}</h3>
+            <p class="text-accent text-base font-semibold">{role.company}</p>
+            <p class="text-subtext font-body text-sm md:text-base leading-relaxed mt-4 max-w-3xl">{role.summary}</p>
+          </header>
+
+          <div class="px-5 md:px-8 py-6">
+            <StatStrip stats={role.stats} />
+          </div>
+
+          <div class="px-5 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+            {role.areas.map((area) => (
+              <AreaTile area={area} />
+            ))}
+          </div>
+
+          <div class="scroll-reveal px-5 md:px-8 py-6 flex flex-wrap gap-2">
+            {role.stack.map((tech) => (
+              <span class="rounded-md text-[10px] px-2 md:px-3 py-1 bg-accent/5 border border-accent/10 text-accent/80">{tech}</span>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  import { initScrollReveal } from '../utils/reveal';
+
+  const revealExperience = () => initScrollReveal('#experience', 2);
+
+  revealExperience();
+  document.addEventListener('astro:after-swap', revealExperience);
+</script>

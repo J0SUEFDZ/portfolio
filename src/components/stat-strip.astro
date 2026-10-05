@@ -1,0 +1,18 @@
+---
+interface Props {
+  stats: { value: string; label: string }[];
+  columns?: 3 | 4;
+}
+
+const { stats, columns = 4 } = Astro.props;
+const gridClass = columns === 3 ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2 lg:grid-cols-4';
+---
+
+<dl class={`grid ${gridClass} gap-3`}>
+  {stats.map((stat) => (
+    <div class="scroll-reveal flex flex-col-reverse justify-end gap-1 px-4 py-3 rounded-xl bg-background/60 border border-accent/15">
+      <dt class="font-mono text-[10px] uppercase tracking-widest text-subtext leading-snug">{stat.label}</dt>
+      <dd class="font-heading font-bold text-accent text-xl md:text-2xl tracking-tight">{stat.value}</dd>
+    </div>
+  ))}
+</dl>

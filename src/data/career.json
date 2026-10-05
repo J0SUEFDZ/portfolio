@@ -1,34 +1,42 @@
 [
   {
     "company": "ActiveCampaign (Postmark)",
-    "role": "Senior Software Engineer",
+    "role": "Senior Software Engineer - Tech Lead",
     "period": "Apr 2024 - Sep 2026",
     "type": "Full time",
-    "description": "De facto Tech Lead and primary frontend owner for Postmark through major team transitions. Led the 10-month template editor initiative end to end, was technical lead for the billing platform migration, ran hiring and onboarding for engineers and contractors, and authored 30+ documentation pages.",
-    "skills": ["Ruby on Rails", "React", "Stripe", "RSpec", "AWS", "Bugsnag"]
+    "description": "Tech Lead and primary owner for Postmark and DMARC Digests through major team transitions. Led the 10-month template editor initiative, was technical lead for 6 senior contractors on the billing platform migration, owned billing infrastructure end to end, served as primary incident responder, and ran hiring and onboarding.",
+    "skills": ["Ruby on Rails", "React", "Stripe", "RSpec", "AWS", "Bugsnag", "New Relic"]
+  },
+  {
+    "company": "ActiveCampaign",
+    "role": "Aspiring Leaders Program",
+    "period": "2026",
+    "type": "Education",
+    "description": "Selected for a 16-week leadership development program designed by ActiveCampaign to transition senior individual contributors into people leaders, building practical skills in ownership, team leadership and managing small to mid-size teams.",
+    "skills": ["Leadership", "Ownership", "Team management"]
   },
   {
     "company": "ActiveCampaign",
     "role": "Software Engineer",
     "period": "Aug 2023 - Apr 2024",
     "type": "Full time",
-    "description": "Owned end-to-end initiatives to improve Customer Support efficiency. Delivered internal tools that contributed to cutting ticket reply times from 6 hours to 23 minutes company-wide, and designed a modular, parallel Playwright framework reaching about 95% coverage.",
-    "skills": ["PHP", "React", "TypeScript", "Python", "Playwright", "GitLab"]
+    "description": "Built internal tooling that let the L2 Customer Support team resolve issues without engineering escalation, contributing to a drop in average first reply time from 6 hours to 23 minutes. Rebuilt a legacy PHP support console as a React and TypeScript micro frontend, and set up its unit and Playwright end-to-end testing.",
+    "skills": ["PHP", "React", "TypeScript", "Python", "Bash", "Playwright", "GitLab"]
   },
   {
     "company": "Gorilla Logic (Blue Apron)",
     "role": "Fullstack Software Developer",
     "period": "Oct 2022 - Mar 2023",
     "type": "Full time",
-    "description": "Built and maintained features for Blue Apron's web platform with a focus on compliance and data privacy. Integrated OneTrust, Segment and Google Tag Manager to enforce user consent preferences and ensure GDPR compliance.",
-    "skills": ["Ruby on Rails", "React", "OneTrust", "Segment", "PostgreSQL", "AWS"]
+    "description": "Worked on Blue Apron's migration from Braze to Segment for customer data collection, and designed its consent preferences in OneTrust and Google Tag Manager to enforce user consent and ensure GDPR compliance. Collaborated with cross-functional teams to improve user data flow and analytics accuracy.",
+    "skills": ["Ruby on Rails", "React", "OneTrust", "Segment", "Google Tag Manager", "PostgreSQL"]
   },
   {
     "company": "Pixel506 (CreativeDrive)",
     "role": "Full Stack Software Engineer",
     "period": "Jan 2022 - Sep 2022",
     "type": "Full time",
-    "description": "Feature development and maintenance on a large-scale web platform built with Ruby on Rails and EmberJS. Reengineered a drag-and-drop onboarding component to improve usability within legacy EmberJS constraints.",
+    "description": "Feature development and maintenance on a large-scale web platform built with Ruby on Rails and EmberJS. Reengineered a drag-and-drop onboarding component to improve usability within legacy EmberJS constraints, and supported performance optimization and bug resolution.",
     "skills": ["Ruby on Rails 4", "EmberJS", "JavaScript", "PostgreSQL"]
   },
   {
@@ -44,7 +52,7 @@
     "role": "Backend Engineer",
     "period": "Jan 2019 - Sep 2019",
     "type": "Full time",
-    "description": "Designed the backend for a health tech video analysis platform: a Python and OpenCV solution for detection, counting and motility tracking, a Django REST API, and AWS Lambda pipelines for automated analysis, with CI/CD on AWS CodePipeline.",
+    "description": "Designed the backend for a health tech video analysis platform: a Python and OpenCV solution for detection, counting and motility tracking, a Django REST API, and AWS Lambda pipelines for automated analysis, with CI/CD on AWS CodePipeline. Led the backend project lifecycle, from planning and QA to client communication.",
     "skills": ["Python", "Django REST Framework", "OpenCV", "AWS Lambda", "PostgreSQL"]
   },
   {

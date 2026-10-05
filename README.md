@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio of Josué Fernández Díaz, Senior Full Stack Software Engineer.
+Personal portfolio of Josué Fernández Díaz, Senior Software Engineer and Tech Lead.
 
 Live at **https://j0suefdz.github.io/portfolio/**
 
@@ -14,7 +14,10 @@ All content lives in JSON files. No component changes are needed for routine upd
 |---|---|
 | `src/data/home.json` | Name, title, intro, availability badge, contact links, SEO fields |
 | `src/data/metrics.json` | The four headline numbers under the hero |
+| `src/data/experience.json` | "Recent Roles" spotlight: stats, areas of ownership and stack per role |
+| `src/data/billing.json` | "Payments & Billing" section: the receipt lines and ownership areas |
 | `src/data/projects.json` | "Selected Work" case studies (context, role, result) |
+| `src/data/adaptability.json` | "New Stack, Same Result" section: statement, stats and stack per team |
 | `src/data/career.json` | Career and education timeline |
 | `src/data/tech.json` | Skills and tools, by category |
 | `src/config.ts` | Color palette (`quetzal` by default; palettes are in `src/styles/global.css`) |
