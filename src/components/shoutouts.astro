@@ -35,8 +35,11 @@ const { quotes, sourceUrl } = shoutouts;
               <blockquote class="text-maintext font-body text-lg md:text-2xl leading-relaxed">
                 {item.quote}
               </blockquote>
-              <figcaption class="mt-6 font-heading font-bold text-accent text-base md:text-lg">
-                {item.name}
+              <figcaption class="mt-6">
+                <span class="block font-heading font-bold text-accent text-base md:text-lg">{item.name}</span>
+                {item.role && (
+                  <span class="block font-mono text-[11px] uppercase tracking-widest text-subtext mt-1">{item.role}</span>
+                )}
               </figcaption>
             </figure>
           </li>

@@ -38,7 +38,7 @@ export const GET: APIRoute = async ({ site }) => {
     .join('\n');
 
   const shoutoutsStr = shoutouts.quotes
-    .map((item) => `- "${item.quote}" (${item.name})`)
+    .map((item) => `- "${item.quote}" (${item.name}, ${item.role})`)
     .join('\n');
 
   const socialsStr = home.socials
