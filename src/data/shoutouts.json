@@ -2,8 +2,24 @@
   "sourceUrl": "https://www.linkedin.com/in/josuefdz/details/recommendations/",
   "quotes": [
     {
+      "name": "Dan DiGangi",
+      "quote": "Josue is one of the best engineers I've managed in my career."
+    },
+    {
       "name": "Josiah Mangiameli",
       "quote": "He owned our billing and subscription logic end to end, including the trickiest customer tickets other engineers shied away from, and he drove our new email editor from early research through delivery, not just writing code, but helping shape the direction of the product itself."
+    },
+    {
+      "name": "Bryan Gelfius",
+      "quote": "Josue is the Ruby developer you want owning a hard feature."
+    },
+    {
+      "name": "Chris Oaldon",
+      "quote": "When there were technologies that he was unfamiliar with, he was proactive in learning them and growing his technical expertise."
+    },
+    {
+      "name": "Eli Woord",
+      "quote": "Beyond the terrific code, Josue has a rare gift for turning complex setup and on-call processes into clean, easy-to-follow documentation."
     },
     {
       "name": "Chris Flack",
