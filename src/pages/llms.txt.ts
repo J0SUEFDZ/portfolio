@@ -6,6 +6,7 @@ import tech from '../data/tech.json';
 import experience from '../data/experience.json';
 import billing from '../data/billing.json';
 import adaptability from '../data/adaptability.json';
+import shoutouts from '../data/shoutouts.json';
 import { absoluteUrl } from '../utils/url';
 
 export const GET: APIRoute = async ({ site }) => {
@@ -36,6 +37,10 @@ export const GET: APIRoute = async ({ site }) => {
     .map((step) => `- **${step.company}** (${step.period}): ${step.stack.join(', ')}. ${step.delivered}`)
     .join('\n');
 
+  const shoutoutsStr = shoutouts.quotes
+    .map((item) => `- "${item.quote}" (${item.name})`)
+    .join('\n');
+
   const socialsStr = home.socials
     .filter((s) => s.url && s.url !== '#')
     .map((s) => `- **${s.name}:** ${s.url.replace('mailto:', '')}`)
@@ -64,6 +69,9 @@ ${billingStr}
 ## Adaptability
 ${adaptability.statement}
 ${adaptabilityStr}
+
+## Shoutouts From Peers
+${shoutoutsStr}
 
 ## Technical Skills & Categories
 ${techCategoriesStr}
