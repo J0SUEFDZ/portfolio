@@ -18,6 +18,7 @@ All content lives in JSON files. No component changes are needed for routine upd
 | `src/data/billing.json` | "Payments & Billing" section: the receipt lines and ownership areas |
 | `src/data/projects.json` | "Selected Work" case studies (context, role, result) |
 | `src/data/adaptability.json` | "New Stack, Same Result" section: statement, stats and stack per team |
+| `src/data/shoutouts.json` | "Shoutouts" carousel: one sentence, a name and a role per person |
 | `src/data/career.json` | Career and education timeline |
 | `src/data/tech.json` | Skills and tools, by category |
 | `src/config.ts` | Color palette (`quetzal` by default; palettes are in `src/styles/global.css`) |
