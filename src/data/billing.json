@@ -1,15 +1,14 @@
 {
-  "intro": "The domain I owned deepest at Postmark. Billing work touches real money and production data, so the standard is simple: customers never notice it.",
+  "intro": "The domain I owned deepest at Postmark. Billing work touches real money and production data, so it is where I am most careful.",
   "company": "Postmark (ActiveCampaign)",
   "period": "Apr 2024 - Sep 2026",
   "ledger": [
     { "item": "Platform migration", "status": "Tech lead" },
-    { "item": "Senior contractors led", "status": "6" },
     { "item": "Pricing-tier integration", "status": "Built + maintained" },
     { "item": "Incidents and defects", "status": "Sole owner" },
     { "item": "Live production data changes", "status": "Multiple" }
   ],
-  "total": { "item": "Customer-facing billing errors", "status": "0" },
+  "total": { "item": "Senior contractors led", "status": "6" },
   "areas": [
     {
       "icon": "mdi:swap-horizontal-bold",

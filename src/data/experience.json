@@ -34,7 +34,7 @@
       {
         "icon": "mdi:credit-card-outline",
         "title": "Billing and payments",
-        "text": "Owned billing infrastructure end to end, with zero customer-facing billing errors.",
+        "text": "Owned billing infrastructure end to end, from the platform migration to incidents and live production changes.",
         "href": "#billing",
         "linkLabel": "See the billing work"
       },
