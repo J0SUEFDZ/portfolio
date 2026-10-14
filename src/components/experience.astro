@@ -16,7 +16,7 @@ interface Role {
 const roles = experienceData as Role[];
 ---
 
-<section id="experience" class="section-container overflow-hidden">
+<section id="recent-roles" class="section-container overflow-hidden">
   <div class="container mx-auto">
     <div class="scroll-reveal mb-12">
       <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
@@ -68,7 +68,7 @@ const roles = experienceData as Role[];
 <script>
   import { initScrollReveal } from '../utils/reveal';
 
-  const revealExperience = () => initScrollReveal('#experience', 2);
+  const revealExperience = () => initScrollReveal('#recent-roles', 2);
 
   revealExperience();
   document.addEventListener('astro:after-swap', revealExperience);
