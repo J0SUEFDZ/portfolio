@@ -35,14 +35,14 @@
         "icon": "mdi:credit-card-outline",
         "title": "Billing and payments",
         "text": "Owned billing infrastructure end to end, from the platform migration to incidents and live production changes.",
-        "href": "#billing",
+        "href": "#payments-billing",
         "linkLabel": "See the billing work"
       },
       {
         "icon": "mdi:pencil-ruler",
         "title": "Template editor and AI agents",
         "text": "Spearheaded the next-generation template editor and built a multi-agent framework for AI coding agents.",
-        "href": "#projects",
+        "href": "#selected-work",
         "linkLabel": "See the case studies"
       }
     ],

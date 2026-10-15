@@ -5,7 +5,7 @@ import StatStrip from './stat-strip.astro';
 const { statement, stats, steps } = adaptability;
 ---
 
-<section id="adaptability" class="section-container overflow-hidden">
+<section id="new-stack" class="section-container overflow-hidden">
   <div class="container mx-auto">
     <div class="scroll-reveal mb-10">
       <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
@@ -48,7 +48,7 @@ const { statement, stats, steps } = adaptability;
 <script>
   import { initScrollReveal } from '../utils/reveal';
 
-  const revealAdaptability = () => initScrollReveal('#adaptability', 3);
+  const revealAdaptability = () => initScrollReveal('#new-stack', 3);
 
   revealAdaptability();
   document.addEventListener('astro:after-swap', revealAdaptability);
