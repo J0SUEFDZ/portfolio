@@ -25,5 +25,7 @@ pnpm-debug.log*
 
 # Agent and assistant files stay local
 .claude/
+.agents/
+skills-lock.json
 AGENTS.md
 CLAUDE.md
