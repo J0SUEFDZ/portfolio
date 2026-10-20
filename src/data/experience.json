@@ -68,7 +68,7 @@
       {
         "icon": "mdi:view-dashboard-outline",
         "title": "Console rebuild",
-        "text": "Rebuilt a legacy PHP support console as a React and TypeScript micro frontend with full feature parity, halving initial load time."
+        "text": "Rebuilt a legacy PHP support console as a React and TypeScript micro frontend with full feature parity."
       },
       {
         "icon": "mdi:test-tube",
@@ -78,7 +78,7 @@
       {
         "icon": "mdi:sitemap-outline",
         "title": "End-to-end strategy",
-        "text": "Architected the Playwright strategy: modular environment configuration, reusable fixtures and page objects, parallel execution. Drove adoption with docs and a knowledge-share session."
+        "text": "Extended the Playwright end-to-end suite on its existing fixtures and page objects: removed repeated setup and ran environments in parallel, tripling the number of tests. Drove adoption with docs and a knowledge-share session."
       }
     ],
     "stack": ["PHP", "React", "TypeScript", "Python", "Bash", "Playwright", "GitLab"]

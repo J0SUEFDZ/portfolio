@@ -28,7 +28,7 @@
     "role": "Fullstack Software Developer",
     "period": "Oct 2022 - Mar 2023",
     "type": "Full time",
-    "description": "Worked on Blue Apron's migration from Braze to Segment for customer data collection, and designed its consent preferences in OneTrust and Google Tag Manager to enforce user consent and ensure GDPR compliance. Collaborated with cross-functional teams to improve user data flow and analytics accuracy.",
+    "description": "Collaborated on Blue Apron's migration from Braze to Segment for customer data collection. On a separate project, designed its GDPR consent preferences in OneTrust and Google Tag Manager. Collaborated with cross-functional teams to improve user data flow and analytics accuracy.",
     "skills": ["Ruby on Rails", "React", "OneTrust", "Segment", "Google Tag Manager", "PostgreSQL"]
   },
   {

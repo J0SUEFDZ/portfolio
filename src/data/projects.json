@@ -32,7 +32,7 @@
     "highlightLabel": "average first reply time",
     "context": "The L2 Customer Support team depended on engineering escalations and a legacy PHP support console.",
     "role": "Built internal tooling so L2 could resolve issues without escalating, and rebuilt the console as a React and TypeScript micro frontend with full feature parity.",
-    "result": "Contributed to cutting average first reply time from 6 hours to 23 minutes and escalated-ticket resolution from over 17 days to under 7. The new console halved initial load time and made in-app actions 2 times faster.",
+    "result": "Contributed to cutting average first reply time from 6 hours to 23 minutes and escalated-ticket resolution from over 17 days to under 7. The new console reached full feature parity on a modern React and TypeScript stack.",
     "tech": ["PHP", "React", "TypeScript", "Python"]
   },
   {
@@ -43,7 +43,7 @@
     "highlight": "95–97%",
     "highlightLabel": "unit test coverage",
     "context": "A new React frontend for the support console with no testing baseline.",
-    "role": "Established the unit testing baseline with Jest and React Testing Library, and architected the Playwright end-to-end strategy: modular environment configuration, reusable fixtures and page objects, and parallel execution.",
+    "role": "Established the unit testing baseline with Jest and React Testing Library, and extended the Playwright end-to-end suite on its existing fixtures and page objects: removed repeated setup and ran environments in parallel, tripling the number of tests.",
     "result": "Coverage of 95–97% across the three modules, and team adoption driven through documentation and a knowledge-share session.",
     "tech": ["Jest", "React Testing Library", "Playwright", "TypeScript", "GitLab"]
   },
@@ -60,15 +60,15 @@
     "tech": ["Ruby on Rails 6", "React", "PostgreSQL", "ElasticSearch", "Sidekiq"]
   },
   {
-    "title": "GDPR consent enforcement",
+    "title": "GDPR consent design",
     "company": "Blue Apron (via Gorilla Logic)",
     "category": "Compliance",
     "icon": "mdi:shield-check-outline",
     "highlight": "GDPR",
-    "highlightLabel": "consent enforced across the stack",
-    "context": "Compliance and data privacy requirements on Blue Apron's e-commerce web platform, alongside its migration from Braze to Segment for customer data collection.",
-    "role": "Designed the consent preferences in OneTrust and Google Tag Manager, and worked on the Segment migration within the Rails backend and React frontend.",
-    "result": "User consent preferences are enforced through the stack, ensuring GDPR compliance.",
+    "highlightLabel": "consent setup designed and documented",
+    "context": "Compliance and data privacy requirements on Blue Apron's e-commerce web platform. Separately, I collaborated on its migration from Braze to Segment for customer data collection.",
+    "role": "Designed the consent preferences in OneTrust and the Google Tag Manager setup that respects them, so tags only fire when a user has consented, and documented the design.",
+    "result": "A documented consent design the team could implement for GDPR compliance.",
     "tech": ["Ruby on Rails", "React", "OneTrust", "Segment", "Google Tag Manager"]
   }
 ]
