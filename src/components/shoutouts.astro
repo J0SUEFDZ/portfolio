@@ -17,26 +17,25 @@ const { quotes, sourceUrl } = shoutouts;
     </div>
 
     <div
-      class="scroll-reveal shoutout-carousel relative rounded-2xl border border-accent/10 bg-accent/5"
+      class="scroll-reveal shoutout-carousel"
       role="region"
       aria-roledescription="carousel"
       aria-label="Shoutouts from peers"
     >
-      <Icon name="mdi:format-quote-open" class="absolute top-4 left-4 md:top-6 md:left-8 w-10 h-10 md:w-14 md:h-14 text-accent/20" aria-hidden="true" />
-
-      <ul class="shoutout-track flex overflow-x-auto snap-x snap-mandatory" tabindex="0">
+      <ul class="shoutout-track flex gap-6 overflow-x-auto snap-x snap-mandatory py-1" tabindex="0">
         {quotes.map((item, index) => (
           <li
-            class="shoutout-slide snap-center shrink-0 w-full flex flex-col items-center justify-center text-center px-6 sm:px-16 md:px-24 pt-16 pb-8 md:pt-20 md:pb-10"
+            class="shoutout-card snap-start shrink-0 flex"
             aria-roledescription="slide"
             aria-label={`${index + 1} of ${quotes.length}`}
           >
-            <figure class="max-w-3xl">
-              <blockquote class="text-maintext font-body text-lg md:text-2xl leading-relaxed">
+            <figure class="group relative flex flex-col justify-center w-full rounded-2xl border border-accent/10 bg-accent/5 hover:border-accent/40 transition-colors duration-500 p-6 md:p-8">
+              <Icon name="mdi:format-quote-open" class="w-8 h-8 text-accent/30 group-hover:text-accent/60 transition-colors duration-300 mb-4 shrink-0" aria-hidden="true" />
+              <blockquote class="text-maintext font-body text-base leading-relaxed">
                 {item.quote}
               </blockquote>
-              <figcaption class="mt-6">
-                <span class="block font-heading font-bold text-accent text-base md:text-lg">{item.name}</span>
+              <figcaption class="mt-6 pt-4 border-t border-accent/10">
+                <span class="block font-heading font-bold text-accent text-base">{item.name}</span>
                 {item.role && (
                   <span class="block font-mono text-[11px] uppercase tracking-widest text-subtext mt-1">{item.role}</span>
                 )}
@@ -47,21 +46,12 @@ const { quotes, sourceUrl } = shoutouts;
       </ul>
 
       {quotes.length > 1 && (
-        <div class="flex items-center justify-center gap-4 pb-6">
-          <button type="button" class="shoutout-nav" data-direction="-1" aria-label="Previous shoutout">
+        <div class="shoutout-controls flex items-center justify-center gap-4 mt-8">
+          <button type="button" class="shoutout-nav" data-direction="-1" aria-label="Previous shoutouts">
             <Icon name="mdi:chevron-left" class="w-5 h-5" />
           </button>
-          <div class="flex items-center gap-2">
-            {quotes.map((item, index) => (
-              <button
-                type="button"
-                class:list={['shoutout-dot', { active: index === 0 }]}
-                data-index={index}
-                aria-label={`Show shoutout from ${item.name}`}
-              ></button>
-            ))}
-          </div>
-          <button type="button" class="shoutout-nav" data-direction="1" aria-label="Next shoutout">
+          <div class="shoutout-dots flex items-center gap-2"></div>
+          <button type="button" class="shoutout-nav" data-direction="1" aria-label="Next shoutouts">
             <Icon name="mdi:chevron-right" class="w-5 h-5" />
           </button>
         </div>
@@ -79,6 +69,7 @@ const { quotes, sourceUrl } = shoutouts;
 
 <style>
   .shoutout-track {
+    --per-view: 1;
     scrollbar-width: none;
     scroll-behavior: smooth;
   }
@@ -89,8 +80,29 @@ const { quotes, sourceUrl } = shoutouts;
 
   .shoutout-track:focus-visible {
     outline: 2px solid var(--color-accent);
-    outline-offset: -2px;
+    outline-offset: 2px;
     border-radius: 1rem;
+  }
+
+  /* Card width fills the track evenly with --per-view cards, minus the gaps between them */
+  .shoutout-card {
+    width: calc((100% - (var(--per-view) - 1) * 1.5rem) / var(--per-view));
+  }
+
+  @media (min-width: 768px) {
+    .shoutout-track {
+      --per-view: 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .shoutout-track {
+      --per-view: 3;
+    }
+  }
+
+  .shoutout-controls.hidden {
+    display: none;
   }
 
   .shoutout-nav {
@@ -112,7 +124,7 @@ const { quotes, sourceUrl } = shoutouts;
     background: color-mix(in srgb, var(--color-accent) 10%, transparent);
   }
 
-  .shoutout-dot {
+  .shoutout-dots :global(.shoutout-dot) {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 9999px;
@@ -121,7 +133,7 @@ const { quotes, sourceUrl } = shoutouts;
     transition: all 0.3s ease;
   }
 
-  .shoutout-dot.active {
+  .shoutout-dots :global(.shoutout-dot.active) {
     width: 1.5rem;
     background: var(--color-accent);
   }
@@ -141,41 +153,65 @@ const { quotes, sourceUrl } = shoutouts;
 
     const carousel = document.querySelector('.shoutout-carousel');
     const track = carousel?.querySelector<HTMLElement>('.shoutout-track');
-    if (!carousel || !track) return;
+    const dotsContainer = carousel?.querySelector<HTMLElement>('.shoutout-dots');
+    const controls = carousel?.querySelector<HTMLElement>('.shoutout-controls');
+    if (!carousel || !track || !dotsContainer || !controls) return;
 
-    const slides = Array.from(track.querySelectorAll<HTMLElement>('.shoutout-slide'));
-    const dots = Array.from(carousel.querySelectorAll<HTMLElement>('.shoutout-dot'));
+    const cards = Array.from(track.querySelectorAll<HTMLElement>('.shoutout-card'));
+    let perView = 1;
+    let pageCount = 1;
     let current = 0;
 
-    const goTo = (index: number) => {
-      // Wraps around so next on the last slide returns to the first
-      const target = (index + slides.length) % slides.length;
-      track.scrollTo({ left: slides[target].offsetLeft - track.offsetLeft });
+    const pageStart = (page: number) => Math.min(page * perView, cards.length - perView);
+
+    const goTo = (page: number) => {
+      // Wraps around so next on the last page returns to the first
+      const target = (page + pageCount) % pageCount;
+      const card = cards[pageStart(target)];
+      track.scrollTo({ left: card.offsetLeft - track.offsetLeft });
     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          current = slides.indexOf(entry.target as HTMLElement);
-          dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
-        }
-      });
-    }, { root: track, threshold: 0.6 });
+    const updateActive = () => {
+      const firstVisible = cards.findIndex((card) => card.offsetLeft - track.offsetLeft >= track.scrollLeft - 4);
+      // The last page may overlap the previous one, so snap to it once scrolled to the end
+      const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+      current = atEnd ? pageCount - 1 : Math.floor(Math.max(firstVisible, 0) / perView);
+      dotsContainer.querySelectorAll('.shoutout-dot').forEach((dot, i) => dot.classList.toggle('active', i === current));
+    };
 
-    slides.forEach((slide) => observer.observe(slide));
+    // Dots depend on how many cards fit per view, which changes with the breakpoint
+    const layout = () => {
+      perView = Number(getComputedStyle(track).getPropertyValue('--per-view')) || 1;
+      pageCount = Math.ceil(cards.length / perView);
+      controls.classList.toggle('hidden', pageCount <= 1);
+
+      dotsContainer.replaceChildren(...Array.from({ length: pageCount }, (_, i) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'shoutout-dot';
+        dot.setAttribute('aria-label', `Show shoutouts page ${i + 1} of ${pageCount}`);
+        dot.addEventListener('click', () => goTo(i));
+        return dot;
+      }));
+      updateActive();
+    };
+
+    let scrollFrame = 0;
+    track.addEventListener('scroll', () => {
+      cancelAnimationFrame(scrollFrame);
+      scrollFrame = requestAnimationFrame(updateActive);
+    }, { passive: true });
 
     carousel.querySelectorAll<HTMLElement>('.shoutout-nav').forEach((button) => {
       button.addEventListener('click', () => goTo(current + Number(button.dataset.direction)));
-    });
-
-    dots.forEach((dot) => {
-      dot.addEventListener('click', () => goTo(Number(dot.dataset.index)));
     });
 
     track.addEventListener('keydown', (event) => {
       if (event.key === 'ArrowRight') { event.preventDefault(); goTo(current + 1); }
       if (event.key === 'ArrowLeft') { event.preventDefault(); goTo(current - 1); }
     });
+
+    new ResizeObserver(layout).observe(track);
   }
 
   initShoutouts();
